@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Learning network</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+    function changeText1() {
+        x = document.getElementById("text1");
+        x.innerHTML = "<span style='padding-right: 5px;'>"+"The three vectors are linear dependent. According to the parallelogram rule, they can be connected end to end after translation and scale transformation, that is, the vectors is equal to 0 when the parameters are not zero."+"</span>";
+		y=document.getElementById('myImage').src='images/LinearDependence1.png';
+    }
+	function changeText2() {
+	    x = document.getElementById("text1");
+	    x.innerHTML = "<span style='padding-rignt;5px'>"+"v1 and v2 are linearly independent. In fact, in two-dimensional plane, if <b>two vectors</b> are not collinear, they are linear independent."+"</span>";
+		y=document.getElementById('myImage').src='images/LinearDependence2.png';
+	}
+</script>
+</head>
+<body>
+  
+    <div class="header">
+         <div class="main">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+            <div class="nav">
+                <ul>
+                  <li><a href="Course.html">Courses<span></span></a></li>
+                  <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+                  <li><a href="notes_all.html">Forum<span></span></a></li>
+                  <li><a href="Experiment.html">Experiment<span class="on"></span></a></li>
+				  <li><a href="video.html">More<span></span></a></li>
+               </ul>
+            </div>
+            <div class="sy">
+                <input type="text" placeholder="search" value="search">
+                <button>Question</button>
+            </div>
+            <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+         </div>
+    </div>
+    
+    <div class="main">
+        
+       <div class="video">
+           <div class="Course">
+                <div class="Course_z">
+                    <a href="Experiment.html"><h1 class="Course_z_off" >Introduction</h1></a>
+                    <dl>
+                       <dt>Matrix Algebra</dt>
+                       <dd><a class="Course_chapter_off" href="Exp_1.html">Matrix Representation</a></dd>
+                       <dd><a class="Course_chapter_off" href="Exp_2.html">Matrix Operation</a></dd>
+                    </dl>
+                    
+                    <dl>
+                       <dt>Vector Space</dt>
+                       <dd><a class="Course_chapter_off" href="Exp_3.html">Vector Representation</a></dd>
+                       <dd><a class="Course_chapter_on" href="Exp_4.html">Linear Dependence</a></dd>
+                    </dl>
+                    
+                </div>
+                <div class="Course_y">
+                　　 <div class="Experiment border">
+						<h1>Linear dependence</h1>
+						<p><font size="4" color=#666><b>1. Definition</b></b></font> </p>
+						<p>Given a set of vectors {<b><i>vi</i></b> } <i>i=1,2,...,k </i>
+						if we can find a set of scalars {<b><i>ci</i></b> } <i>i=1,2,...,k</i> 
+						(excluding <i>c1=c2=...=0 </i>) such that</p>
+						<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<i>c1<b>v1</b></i>+<i>c2<b>v2</b></i>+...+<i>ck<b>vk</b></i>=<b>0</b>
+						<p>then the set of vectors is called linearly dependent. If there is none, they are
+						linear independent. Here are some examples that help you have a better understanding.</p>
+						
+
+						<div id="linear">
+							<img id="myImage" src="images/LinearDependence2.png"  width="250">
+							<div id="linear2">
+								<p id="text1">v1 and v2 are linearly independent. <br>In fact, in two-dimensional plane, if <b>two vectors</b>
+								are <br>not collinear, they are linear independent.</p>
+							</div>
+						</div>
+						
+						<div class = "button_area">
+							<button class="option" onclick="changeText1()">Example1</button>
+							<button class="option" onclick="changeText2()">Example2</button>
+						</div>
+					</div>
+					 				 
+                    <div class="Experiment border">
+                          <h2>Get Matlab Code !</h1>
+                    </div>
+                </div>
+           </div>
+
+            <div class="video_right">
+               
+		         <div class="tb" style="margin-top: 30px;"> 
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+               
+            </div>
+       </div>
+        
+   </div> 
+    
+    <div class="foot">
+        <a href="#">AboutUs</a>| 
+        <a href="#">Contact Us</a> | 
+        <a href="#">Help Centre</a> | 
+        <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+    </div>
+    
+</body>
+
+
+
+

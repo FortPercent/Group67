@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Learning network</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            //获取url中的参数
+            function getUrlParam(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+                var r = window.location.search.substr(1).match(reg); //匹配目标参数
+                if (r != null) return unescape(r[2]);
+                return null; //返回参数值
+            }
+            var answer = ["A", "B", "B", "B", "C"];//标准答案
+            var answer_score = [20,20,20, 20, 20];//答案的分数
+            var user_answer = JSON.parse(getUrlParam("json"));//获取用户答案
+            var radio_num = parseInt(getUrlParam("radio"));//获取单选个数
+            var radio_result = 0;//单选分数
+            var checkbox_result = 0;//多选分数
+            var radio_right_num = 0;//单选答对个数
+            var result = 0;//总分数
+
+            var user_answer_result = new Array();//用户没到题的答题情况
+            for (var i = 0; i < user_answer.length; i++) {
+                if (user_answer[i] == answer[i]) {
+                    if (i < radio_num) {
+                        radio_result = radio_result + answer_score[i];
+                        radio_right_num++;
+                    } else {
+                        checkbox_result = checkbox_result + answer_score[i];
+                        checkbox_right_num++;
+                    }
+                    user_answer_result[i] ="<span style='color: green;'>"+"Your answer ： "+ "correct"+"</span>";
+
+
+                } else {
+                    user_answer_result[i] ="<span style='color: red;'>"+"Your answer ： "+ "error"+"</span>";
+                }
+            }
+            result = checkbox_result + radio_result;
+            //结果展示
+            var show_result1;
+            var show_result6;
+            show_result1 = "For results : " +  "<br/><br/>";
+            for (var i = 0; i < user_answer.length; i++) {
+                show_result1 = "<span style = 'font-family: Georgia;'>"+show_result1 + (i + 1) + "："+  user_answer_result[i]  +"<br/>"  + "Correct answer :" + answer[i]+"；" + "<br/><br/>"+"<hr/>"+"<br/>"+"</span>";
+            }
+
+            show_result6 = " Score : " + result;
+
+            $("p#score").html(show_result6);
+            $("p#answer").html(show_result1);
+        })
+
+    </script>
+
+</head>
+
+<body>
+  
+    <div class="header">
+         <div class="main">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width = "100px"></a></div>
+            <div class="nav">
+                <ul>
+                  <li><a href="Course.html">Courses<span></span></a></li>
+                  <li><a href="Quiz_1.1.1.html">Quiz<span class="on"></span></a></li>
+                  <li><a href="notes_all.html">Forum<span></span></a></li>
+                  <li><a href="Experiment.html">Experiment<span></span></a></li>
+				  <li><a href="video.html">More<span></span></a></li>
+               </ul>
+            </div>
+            <div class="sy">
+                <input type="text" placeholder="search" value="search">
+                <button>Question</button>
+            </div>
+            <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+         </div>
+    </div>
+    
+    <div class="main">
+        
+       <div class="video">
+           <div class="Course">
+                <div class="Course_z">
+                    <h1 class="Course_z_off">Linear Algebra</h1>
+                    <!-- <h1 class="Course_z_on">Linear Algebra</h1> -->
+		                <dl>
+		                   <dt>Linear Equation</dt>
+		                   <dd><a class="Course_chapter_off" href="Quiz_1.1.1.html">Linear Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Quiz_1.2.1 .html">Vector Equation</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Matrix Algebra</dt>
+		                   <dd><a class="Course_chapter_off" href="Quiz_2.1.1.html">Matrix Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Quiz_2.2.2.html">Subspace & Dimension</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Vector Space</dt>
+		                   <dd><a class="Course_chapter_off" href="Quiz_3.1.1.html">Vector Space</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Quiz_3.2.1.html">Zero Space & Basis</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Eigenvalues</dt>
+		                   <dd><a class="Course_chapter_on" href="Quiz_4.1.1.html">Eigenvectors&Eigenvalues</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Quiz_4.2.1.html">Eigenfunctions</a></dd>
+		                </dl>
+                </div>
+                <div class="Quiz">
+                　　
+                    <div class="fy" style="padding:0;">
+                         <div class="fy_s">
+                             <p>Test Yourself!</p>
+                             <a href="Quiz_1.html"><p class="text1 " id="score"></p></a>
+                         </div>
+                    </div>
+                    
+                     <div class="list">
+                        <p class="text1" id="answer"></p>
+                    </div>
+
+                       <div class="next">
+                        <a href="Chapter4_1.html">Return</a>
+						<a href="Quiz_4.2.1.html">Next</a>
+                    </div> 
+
+	
+                        
+                    </div>                                      
+                </div>
+          
+
+            <div class="video_right">
+              
+              <div class="video_xk">
+               <div class="video_top">
+                   <ul>
+                      <li>
+                        <a href="threads_all.html">
+                        <img src="images/icon1.jpg">
+                        <p>Answer<br>Question</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="notes_all.html">
+                        <img src="images/icon2.jpg">
+                        <p>Share<br>notes</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="download_all.html">
+                        <img src="images/icon3.jpg">
+                        <p>Download<br>file</p>
+                        </a>
+                      </li>
+                   </ul>
+               </div>
+               <div class="video_btm">
+                   <span>Answer later</span><span style="border:none;">Draft</span>
+               </div>
+             </div>
+               
+		         <div class="tb" > 
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+               
+            </div>
+       </div>
+        
+   </div> 
+    
+    <div class="foot">
+        <a href="#">AboutUs</a>| 
+        <a href="#">Contact Us</a> | 
+        <a href="#">Help Centre</a> | 
+        <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+    </div>
+    
+</body>
+
+
+
+

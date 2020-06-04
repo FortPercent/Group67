@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vector Equation</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header">
+		     <div class="main">
+		        <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+		        <div class="nav">
+		            <ul>
+		              <li><a href="Course.html">Courses<span class="on"></span></a></li>
+		              <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+		              <li><a href="notes_all.html">Forum<span></span></a></li>
+		              <li><a href="Experiment.html">Experiment<span></span></a></li>
+					  <li><a href="video.html">More<span></span></a></li>
+		           </ul>
+		        </div>
+		        <div class="sy">
+		            <input type="text" placeholder="search" value="search">
+		            <button>Question</button>
+		        </div>
+		        <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+		     </div>
+		</div>
+		
+		<div class="main">
+		    
+		   <div class="video">
+		       <div class="Course">
+		            <div class="Course_z">
+		                <h1 class="Course_z_off">Linear Algebra</h1>
+		                <dl>
+		                   <dt>Linear Equation</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_1.html">Linear Equation</a></dd>
+		                   <dd><a class="Course_chapter_on" href="Chapter1_2.html">Vector Equation</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Matrix Algebra</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_1.html">Matrix Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_2.html">Subspace & Dimension</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Vector Space</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_1.html">Vector Space</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_2.html">Zero Space & Basis</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Eigenvalues</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_1.html">Eigenvectors&Eigenvalues</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_2.html">Eigenfunctions</a></dd>
+		                </dl>
+		            </div>
+					
+		            <div class="Course_chapter">
+						<h1>Vector Equation</h1>
+						<hr color = "#708ACE" size=1px/>
+						<h2>What is vector ?</h2>
+						<div class="Course_chapter_content">
+							<p>Ordered real number pair. A matrix with only one column is called a column vector. E.g. 
+							<img src="images/vector.png" height ="35px" ></p>
+							<p>The set of vectors of all two elements is called R2, where R means that the members of the vector are real Numbers, and the exponent 2 means that each vector contains two elements.</p>
+							<p>Geometric representation of R2: since each point on the plane is determined by an ordered pair of real Numbers, the geometric point (a, b) can be equated with the column vector <img src = "images/vector1.png" height="25px">, thus R2 can be regarded as a set of all points on the plane. <br/>
+							</p>
+							<div align = "center">
+								<img src="images/plane.png" height ="200px" >
+								<h6>Write the vector in terms of points</h6>
+							</div>
+							<div align = "center">
+								<img src="images/plane2.png" height ="200px" >
+								<h6>Write the vector in terms of arrows</h6>
+							</div>
+							<p>Geometric representation of R3: vectors in R3 are 3 by 1 matrices that represent points in the three-dimensional coordinate space, 
+							or arrows that start at the origin.</p>
+							<div align = "center">
+								<img src="images/plane3.png" height ="200px" >
+								<h6>a = <img src = "images/vector2.png" height= "30px"> and 2a</h6>
+							</div>
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>The span of the vector</h2>
+						<div class="Course_chapter_content">
+							<p>If v1,v2... vp are vectors in R^n, so the set of all linear combinations of v1,v2... vp are represented by the notation Span{v1,v2... vp}, 
+							which is called a subset of R^n generated (or spanned) by v1,v2... vp, that is to say, Span{ v1,v2... vp } is a set of vectors visible as c1v1+c2v2+…+cpvp, where c1,c2…cp is a scalar.</p>
+							<p>Span{v}: if v is a vector in R^3, then Span{v} is the set of all scalar multiples of v.</p>
+							<div align = "center">
+								<img src="images/plane4.png" height ="200px" >
+								<h6>the set of all the points in R^3 that go through the epsilon and the origin</h6>
+							</div>
+							<p>Span{u,v}: if u,v are non-zero vectors in R^3, and v is not a multiple of u, then Span{u,v} is a plane in R^3 through the origin, 
+							including R^3 through u and the origin of the line, including through the origin of the line.</p>
+							<div align = "center">
+								<img src="images/plane5.png" height ="200px" >
+							</div>
+						</div>
+						<hr color="#708ACE"size=1px/>
+
+		                <div class="fy">
+		                     <div class="fy_s">
+		                         <p>Test Yourself!</p>
+		                         <a href="Quiz_1.2.1 .html"><p class="text1">Quiz Link</p></a>
+		                     </div>
+		                     <div class="fy_x">
+		                         <a href="Chapter1_1.html">Previous</a>
+		                         <a href="Chapter2_1.html">Next</a>
+		                     </div>
+		                </div>
+		            </div>
+		       </div>
+		
+		        <div class="video_right">
+		          
+		          <div class="video_xk">
+		           <div class="video_top">
+		               <ul>
+		                  <li>
+		                    <a href="threads_all.html">
+		                    <img src="images/icon1.jpg">
+		                    <p>Answer<br>Question</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="notes_all.html">
+		                    <img src="images/icon2.jpg">
+		                    <p>Share<br>notes</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="download_all.html">
+		                    <img src="images/icon3.jpg">
+		                    <p>Download<br>file</p>
+		                    </a>
+		                  </li>
+		               </ul>
+		           </div>
+		           <div class="video_btm">
+		               <span>Answer later</span><span style="border:none;">Draft</span>
+		           </div>
+		         </div>
+		           
+		         <div class="tb">
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+		           
+		        </div>
+		   </div>
+		   
+		<div class="foot">
+		    <a href="#">AboutUs</a>| 
+		    <a href="#">Contact Us</a> | 
+		    <a href="#">Help Centre</a> | 
+		    <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Subspace, Dimension, Rank</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header">
+		     <div class="main">
+		        <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+		        <div class="nav">
+		            <ul>
+		              <li><a href="Course.html">Courses<span class="on"></span></a></li>
+		              <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+		              <li><a href="notes_all.html">Forum<span></span></a></li>
+		              <li><a href="Experiment.html">Experiment<span></span></a></li>
+					  <li><a href="video.html">More<span></span></a></li>
+		           </ul>
+		        </div>
+		        <div class="sy">
+		            <input type="text" placeholder="search" value="search">
+		            <button>Question</button>
+		        </div>
+		        <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+		     </div>
+		</div>
+		
+		<div class="main">
+		    
+		   <div class="video">
+		       <div class="Course">
+		            <div class="Course_z">
+		                <h1 class="Course_z_off">Linear Algebra</h1>
+		                <dl>
+		                   <dt>Linear Equation</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_1.html">Linear Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_2.html">Vector Equation</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Matrix Algebra</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_1.html">Matrix Equation</a></dd>
+		                   <dd><a class="Course_chapter_on" href="Chapter2_2.html">Subspace & Dimension</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Vector Space</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_1.html">Vector Space</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_2.html">Zero Space & Basis</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Eigenvalues</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_1.html">Eigenvectors&Eigenvalues</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_2.html">Eigenfunctions</a></dd>
+		                </dl>
+		            </div>
+					
+		            <div class="Course_chapter">
+						<h1>Subspace, Dimension, Rank</h1>
+						<hr color = "#708ACE" size=1px/>
+						<h2>What is subspace ?</h2>
+						<div class="Course_chapter_content">
+							<p>A subspace in Rn is a set H in Rn and has the following three properties:</p>
+							<ol>
+								<li>1. The zero vector is a member of H;</li>
+								<li>2. For any vector u and v in H, u+v belongs to H;</li>
+								<li>3. For any vector u and real Numbers in H, cu belongs to H.</li>
+							</ol>
+							<p>That is, the subspace is closed for addition and scalar multiplication. For example, the plane through the origin is a very typical subspace. </p>
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>The basis of a subspace</h2>
+						<div class="Course_chapter_content">
+							<p>A subspace generally contains an infinite number of vectors, problems in a subspace are best solved by studying a small finite set that can generate the subspace. 
+							A basis for H in Rn is A linearly independent set in H, which generates H, and the parameter vectors for the solution set Ax is equal to 0 are essentially the basis for Null A.</p>
+							<div align = "center">
+								<img src="images/subspace.png" height ="100px" >
+								<img src="images/subspace2.png" height ="120px" >
+								<h6>{e1 and e2... en} is called the standard basis for Rn.</h6>
+							</div>
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>Dimension of a subspace</h2>
+						<div class="Course_chapter_content">
+							<p>The dimension of a non-null subspace H is the number of vectors of any basis of H, denoting dim H. The dimension of the null subspace is defined as zero.</p>
+							<p>Rn has dimensions of n, and each basis of Rn is made up of n vectors, and in R3 a plane that goes through the origin is two-dimensional, and a line that goes through the origin is one-dimensional.</p>	
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>Rank of matrix: </h2>
+						<div class="Course_chapter_content">
+							<p>The rank of matrix A is the dimension of the column space of A, which is called rank A. Since the pivot column of A forms A basis of Col A, the rank of A is exactly the number of pivot column of A after simplifying A to row ladder type.</p>
+							<p>Determine the rank of A where <img src = "images/rankmatrix.png" height="70px">.</p>
+							<div align="center">
+								<img src= "images/rank.png" height="80px">
+							</div>
+							<p>Matrix A has three pivot columns, so its rank = 3.</p>
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>Theorem of rank and invertible matrix</h2>
+						<div class="Course_chapter_content">
+							<p>Assuming that A is an n-by-n matrix, each of the following statements is equivalent to saying that A is invertible.</p>
+							<ol>
+								<li>1.	The column vectors of A form A basis for Rn;</li>
+								<li>2.	Col A=Rn;</li>
+								<li>3.	dim Col A=n;</li>
+								<li>4.	Rank A=n;</li>
+								<li>5.	Null A= {0};</li>
+								<li>6.	dim Null A=0.</li>
+							</ol>
+						</div>
+						<hr color="#708ACE" size=1px/>
+		                <div class="fy">
+		                     <div class="fy_s">
+		                         <p>Test Yourself!</p>
+		                         <a href="Quiz_2.2.1.html"><p class="text1">Quiz Link</p></a>
+		                     </div>
+		                     <div class="fy_x">
+		                         <a href="Chapter2_1.html">Previous</a>
+		                         <a href="Chapter3_1.html">Next</a>
+		                     </div>
+		                </div>
+		            </div>
+		       </div>
+		
+		        <div class="video_right">
+		          
+		          <div class="video_xk">
+		           <div class="video_top">
+		               <ul>
+		                  <li>
+		                    <a href="threads_all.html">
+		                    <img src="images/icon1.jpg">
+		                    <p>Answer<br>Question</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="notes_all.html">
+		                    <img src="images/icon2.jpg">
+		                    <p>Share<br>notes</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="download_all.html">
+		                    <img src="images/icon3.jpg">
+		                    <p>Download<br>file</p>
+		                    </a>
+		                  </li>
+		               </ul>
+		           </div>
+		           <div class="video_btm">
+		               <span>Answer later</span><span style="border:none;">Draft</span>
+		           </div>
+		         </div>
+		           
+		         <div class="tb">
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+		           
+		        </div>
+		   </div>
+		   
+		<div class="foot">
+		    <a href="#">AboutUs</a>| 
+		    <a href="#">Contact Us</a> | 
+		    <a href="#">Help Centre</a> | 
+		    <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+		</div>
+	</body>
+</html>

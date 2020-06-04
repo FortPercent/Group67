@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Eigenvalues and Eigenvectors</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header">
+		     <div class="main">
+		        <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+		        <div class="nav">
+		            <ul>
+		              <li><a href="Course.html">Courses<span class="on"></span></a></li>
+		              <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+		              <li><a href="notes_all.html">Forum<span></span></a></li>
+		              <li><a href="Experiment.html">Experiment<span></span></a></li>
+					  <li><a href="video.html">More<span></span></a></li>
+		           </ul>
+		        </div>
+		        <div class="sy">
+		            <input type="text" placeholder="search" value="search">
+		            <button>Question</button>
+		        </div>
+		        <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+		     </div>
+		</div>
+		
+		<div class="main">
+		    
+		   <div class="video">
+		       <div class="Course">
+		            <div class="Course_z">
+		                <h1 class="Course_z_off">Linear Algebra</h1>
+		                <dl>
+		                   <dt>Linear Equation</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_1.html">Linear Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_2.html">Vector Equation</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Matrix Algebra</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_1.html">Matrix Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_2.html">Subspace & Dimension</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Vector Space</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_1.html">Vector Space</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_2.html">Zero Space & Basis</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Eigenvalues</dt>
+		                   <dd><a class="Course_chapter_on" href="Chapter4_1.html">Eigenvectors&Eigenvalues</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_2.html">Eigenfunctions</a></dd>
+		                </dl>
+		            </div>
+					
+		            <div class="Course_chapter">
+						<h1>Eigenvectors and Eigenvalues</h1>
+						<hr color = "#708ACE" size=1px/>
+						<h2>Characteristic equation</h2>
+						<div class="Course_chapter_content">
+							<p>A is an n by n matrix, x is A non-zero vector, and if the number λ exists such that Ax= λx has A non-trivial solution x, then λ is the eigenvalue of A, and x becomes the eigenvector corresponding to λ.</p>
+							<p>Whether u and v are eigenvectors of A？ </p>
+							<div align="center">
+								<img src="images/eigenvalue.png" height= "55px"><br/><br/>
+								<img src="images/eigenvalue2.png" height= "55px">
+								<img src="images/eigenvalue3.png" height= "60px"><br/><br/>
+								<img src="images/eigenvalue4.png" height= "140px">
+							</div>
+							<p>So, u is the eigenvector for the eigenvalue minus 4, but Av is not A multiple of v so v is not the eigenvector for A.</p>
+							
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>Eigenspace</h2>
+						<div class="Course_chapter_content">
+							<p>(A- λI) x= 0 has non-trivial solutions, and the set of all solutions is the null space of the matrix A- λI, called the eigenspace of A corresponding to. The eigenspace consists of the zero vector and all the eigenvectors corresponding to λ.</p>
+							<p><img src="images/eigenvalue5.png" height= "35px">, Are there eigenvectors corresponding to the eigenvalue 7? </p>
+							<p>If and only if Ax=7x has A non-trivial solution, that is, Ax−7x=0, or (A−7I) x=0.</p>
+							<p>To understand the homogeneous equation, calculate </p>
+							<div align="center">
+								<img src="images/eigenvalue6.png" height= "40px" >
+							</div>
+							<p>The columns of A−7I are clearly linearly dependent, so Ax=7x has A non-trivial solution, so 7 is the eigenvalue of A.</p>
+						</div>	
+						<hr color="#708ACE" size=1px/>
+					
+
+		                <div class="fy">
+		                     <div class="fy_s">
+		                         <p>Test Yourself!</p>
+		                         <a href="Quiz_4.1.1.html"><p class="text1">Quiz Link</p></a>
+		                     </div>
+		                     <div class="fy_x">
+		                         <a href="Chapter3_2.html">Previous</a>
+		                         <a href="Chapter4_2.html">Next</a>
+		                     </div>
+		                </div>
+		            </div>
+		       </div>
+		
+		        <div class="video_right">
+		          
+		          <div class="video_xk">
+		           <div class="video_top">
+		               <ul>
+		                  <li>
+		                    <a href="threads_all.html">
+		                    <img src="images/icon1.jpg">
+		                    <p>Answer<br>Question</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="notes_all.html">
+		                    <img src="images/icon2.jpg">
+		                    <p>Share<br>notes</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="download_all.html">
+		                    <img src="images/icon3.jpg">
+		                    <p>Download<br>file</p>
+		                    </a>
+		                  </li>
+		               </ul>
+		           </div>
+		           <div class="video_btm">
+		               <span>Answer later</span><span style="border:none;">Draft</span>
+		           </div>
+		         </div>
+		           
+		         <div class="tb">
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+		           
+		        </div>
+		   </div>
+		   
+		<div class="foot">
+		    <a href="#">AboutUs</a>| 
+		    <a href="#">Contact Us</a> | 
+		    <a href="#">Help Centre</a> | 
+		    <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+		</div>
+	</body>
+</html>

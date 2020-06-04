@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Matrix Equation</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+		<div class="header">
+		     <div class="main">
+		        <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+		        <div class="nav">
+		            <ul>
+		              <li><a href="Course.html">Courses<span class="on"></span></a></li>
+		              <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+		              <li><a href="notes_all.html">Forum<span></span></a></li>
+		              <li><a href="Experiment.html">Experiment<span></span></a></li>
+					  <li><a href="video.html">More<span></span></a></li>
+		           </ul>
+		        </div>
+		        <div class="sy">
+		            <input type="text" placeholder="search" value="search">
+		            <button>Question</button>
+		        </div>
+		        <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+		     </div>
+		</div>
+		
+		<div class="main">
+		    
+		   <div class="video">
+		       <div class="Course">
+		            <div class="Course_z">
+		                <h1 class="Course_z_off">Linear Algebra</h1>
+		                <dl>
+		                   <dt>Linear Equation</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_1.html">Linear Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_2.html">Vector Equation</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Matrix Algebra</dt>
+		                   <dd><a class="Course_chapter_on" href="Chapter2_1.html">Matrix Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_2.html">Subspace & Dimension</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Vector Space</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_1.html">Vector Space</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_2.html">Zero Space & Basis</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Eigenvalues</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_1.html">Eigenvectors&Eigenvalues</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_2.html">Eigenfunctions</a></dd>
+		                </dl>
+		            </div>
+					
+		            <div class="Course_chapter">
+						<h1>Matrix Equation</h1>
+						<hr color = "#708ACE" size=1px/>
+						<h2>What is matrix ?</h2>
+						<div class="Course_chapter_content">
+							<p>If A is an m by n matrix, that is, there are m rows and n columns, then the ith row and jth column element 
+							of A is represented by aij, and the matrix A can be represented as A= [aij].</p>
+							<div align = "center">
+								<img src="images/matrix.png" height ="200px" >
+							</div>
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>Matrix multiplication</h2>
+						<div class="Course_chapter_content">
+							<p>A is an m by n matrix, B is an n by p matrix, and the columns of B are b1,b2... Bp, then the product AB is m by p matrix, its each column Ab1,Ab2... Abp, that is, AB=A [b1, b2... bp] =[Ab1, Ab2... Abp].
+							<br/>E.g. <img src="images/matrixAB.png" height ="50px" ></p>
+							<p>Each column of AB is A linear combination of the columns of A, weighted by the elements of the corresponding column of B. The number of columns of A has to be equal to the number of rows of B for A linear combination to be defined, the number of rows of AB has to be equal to the number of rows of A, and the number of columns has to be equal to the number of columns of B.</p>
+							<div align = "center">
+								<img src="images/matrixAB1.png" height ="200px" >
+							</div>
+						</div>
+						<hr color="#708ACE"size=1px/>
+						<div class = "Course_chapter_content">
+							<h2>Properties of matrix multiplication</h2>
+							<ol>
+								<li>1.Associative property of multiplication: A(BC) =(AB)C;</li>
+								<li>2.Left distributive property of multiplication: A(B+C) = AB+AC;</li>
+								<li>3.Right distributive property of multiplication :(B+C) A =BA+CA;</li>
+								<li>4.Identity of matrix multiplication: ImA =A =AIm.</li>
+							</ol>
+						</div>
+						<hr color="#708ACE"size=1px/>
+						<div class = "Course_chapter_content">
+							<h2>Matrix inverse</h2>
+							<p>If there is an n by n matrix C such that CA=AC=I, where I=In is the n by n identity matrix, then an n by n matrix 
+							A is invertible and C is A’s inverse.<br/>E.g. <img src="images/matrixAC.png" height = "50px"></p>
+							<p> A is invertible, then its inverse is unique, let's call it A minus 1.</p>
+							<div align = "center">
+								<img src = "images/matrixAC2.png" height = "120px">
+							</div>
+						</div>
+						<hr color="#708ACE"size=1px/>
+						<div class = "Course_chapter_content">
+							<h2>Invertible matrix theorem</h2>
+							<p>If A is an invertible n-by-n matrix, then for every b in Rn, there is A unique solution to the equation Ax is equal to b, x is equal to (A^-1)*b.</p>
+							<p>Calculate<img src = "images/eq.png" height = "50px">. Which is equivalent to Ax=b,<img src="images/eq2.png" height="50px">.<br/><img src = "images/eq3.png" height= "50px"></p>
+						</div>
+						<hr color="#708ACE"size=1px/>
+		                <div class="fy">
+		                     <div class="fy_s">
+		                         <p>Test Yourself!</p>
+		                         <a href="Quiz_2.1.1.html"><p class="text1">Quiz Link</p></a>
+		                     </div>
+		                     <div class="fy_x">
+		                         <a href="Chapter1_2.html">Previous</a>
+		                         <a href="Chapter2_2.html">Next</a>
+		                     </div>
+		                </div>
+		            </div>
+		       </div>
+		
+		        <div class="video_right">
+		          
+		          <div class="video_xk">
+		           <div class="video_top">
+		               <ul>
+		                  <li>
+		                    <a href="threads_all.html">
+		                    <img src="images/icon1.jpg">
+		                    <p>Answer<br>Question</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="notes_all.html">
+		                    <img src="images/icon2.jpg">
+		                    <p>Share<br>notes</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="download_all.html">
+		                    <img src="images/icon3.jpg">
+		                    <p>Download<br>file</p>
+		                    </a>
+		                  </li>
+		               </ul>
+		           </div>
+		           <div class="video_btm">
+		               <span>Answer later</span><span style="border:none;">Draft</span>
+		           </div>
+		         </div>
+		           
+		         <div class="tb">
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+		           
+		        </div>
+		   </div>
+		   
+		<div class="foot">
+		    <a href="#">AboutUs</a>| 
+		    <a href="#">Contact Us</a> | 
+		    <a href="#">Help Centre</a> | 
+		    <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+		</div>
+	</body>
+</html>

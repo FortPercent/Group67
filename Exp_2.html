@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Learning network</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+    <div class="header">
+         <div class="main">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+            <div class="nav">
+                <ul>
+                  <li><a href="Course.html">Courses<span></span></a></li>
+                  <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+                  <li><a href="notes_all.html">Forum<span></span></a></li>
+                  <li><a href="Experiment.html">Experiment<span class="on"></span></a></li>
+				  <li><a href="video.html">More<span></span></a></li>
+               </ul>
+            </div>
+            <div class="sy">
+                <input type="text" placeholder="search" value="search">
+                <button>Question</button>
+            </div>
+            <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+         </div>
+    </div>
+    
+    <div class="main">
+        
+       <div class="video">
+           <div class="Course">
+                <div class="Course_z">
+                    <a href="Experiment.html"><h1 class="Course_z_off" >Introduction</h1></a>
+                    <dl>
+                       <dt>Matrix Algebra</dt>
+                       <dd><a class="Course_chapter_off" href="Exp_1.html">Matrix Representation</a></dd>
+                       <dd><a class="Course_chapter_on" href="Exp_2.html">Matrix Operation</a></dd>
+                    </dl>
+                    
+                    <dl>
+                       <dt>Vector Space</dt>
+                       <dd><a class="Course_chapter_off" href="Exp_3.html">Vector Representation</a></dd>
+                       <dd><a class="Course_chapter_off" href="Exp_4.html">Linear Dependence</a></dd>
+                    </dl>
+                    
+                </div>
+                <div class="Course_y">
+                　　  <div class="Experiment border">
+							<h1>Matrix Operation</h1>
+							<p><font size="4" color=#666><b>1. Simple operation</b></b></font> </p>
+							<p>a) Get matrix elements</p>
+							<p>You can refer to the elements of a matrix by subscripts (column and column indexes) or indexs of the elements of a matrix. 
+							The index of an element is the order in which it is arranged in memory. In MATLAB, one index corresponds to one 
+							subscript. Take m*n matrix <i><b>A</b></i> as an example, the index of matrix element <i><b>A(i,j)</b></i> is (j-1)*m+ i. 
+							The mutual transformation relation can also be obtained by <b><i>sub2ind</i></b> and <b><i>ind2sub</i></b>.
+							<img src="images/ind&sub.png">
+							The example of the use of function <b><i>sub2ind</i></b> above shows that the element with subscript (1,3) in the matrix is indexed 7 in the Matlab memory.
+							The element with subcript (2,2) is indexed 5 and subcript (3,1) is indexed 3.
+							</p>
+							
+							<p>b) Matrix splitting</p>
+							<p>The colon expression is used to obtain the submatrix:
+							<br> <b><i> A</i>(:,j)</b> : taking all elements in the <i>jth</i> column of  matrix <i>A</i>;
+							<br> <b><i> A</i>(i,:)</b>  : taking all elements in the <i>ith</i> row of matrix <i>A</i> ; 
+							<br> <b><i> A</i>(i,j)</b> : taking the element in the <i>ith</i> row and <i>jth</i> column of <i>A</i>.
+							<br><p> </p>
+							<hr color="#708ACE" size=1px/>
+							
+							<p><font size="4" color=#666><b>2. Matrix arithmetic operation</b></b></font> </p>
+							<p>MATLAB basic arithmetic operations are: + (plus), - (minus), * (multiply), / or \(divide), ^ (power), '(transpose). 
+								Operation is carried out in the sense of matrix, the arithmetic operation of a single data is only a special case.</p>
+							<p><b>a) Matrix addition and subtraction</b>: There are two matrices <i><b>A</b></i> and <i><b>B</b></i>, then the matrix addition and subtraction operations can be realized by <i><b>A+B</b></i> and <i><b>A-B</b></i>. 
+								The operation rule is that if the dimensions of <i><b>A</b></i> and <i><b>B</b></i> matrices are the same, the addition and subtraction of the matrices can be performed. 
+								If the dimensions of <i><b>A</b></i> and <i><b>B</b></i> are different, MATLAB will give an error message that the dimensions of the two matrices do not match.</p>
+							<p><b>b) Matrix multiplication</b>: If <i><b>A</b></i> is a matrix with dimension <i><b>m*n</b></i> and <i><b>B</b></i> with dimension <i><b>n*p</b></i>,
+							 then <i><b>C=A*B</b></i> is a matrix with dimension <i><b>m*p</b></i></p>
+							<p><b>c) Matrix division</b> : There are two matrix division operations: \ and /, respectively 
+								representing left division and right division. If the <i><b>A</b></i> matrix is nonsingular,  
+								<i><b>A\B</b></i> and <i><b>B/A</b></i> can be realized. <i><b>A\B</b></i> is equivalent to the
+								inverse <i><b>A</b></i> multiply <i><b>B</b></i> on the left, which is <i><b>inv(A)*B</b></i>.
+								<i><b>B/A</b></i> is equivalent to inverse <i><b>A</b></i> multiply <i><b>B</b></i> on the right, 
+								which is <i><b>B*inv(A)</b></i>. For matrices, generally, <i><b>A\B≠B/A</b></i>.</p>
+							<p><b>d) Matrix power</b>: <i><b>x</b></i> power of matrix <i><b>A</b></i> can be expressed as <i><b>A^x</b></i>, 
+								The premise condition is that <i><b>A</b></i> is a square matrix and <i><b>x</b></i> is a scalar</p>
+							<p><b>e) Matrix transpose</b>: swap the rows and columns of a real matrix. As for the complex matrix, 
+							conjugate is applied in addition. 
+							<img src="images/operation.png">
+					 </div>
+					 				 
+                     <div class="Experiment border">
+                          <h2>Get Matlab Code !</h1>
+                     </div>
+                </div>
+           </div>
+
+            <div class="video_right">
+               
+		         <div class="tb" style="margin-top: 30px;"> 
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+               
+            </div>
+       </div>
+        
+   </div> 
+    
+    <div class="foot">
+        <a href="#">AboutUs</a>| 
+        <a href="#">Contact Us</a> | 
+        <a href="#">Help Centre</a> | 
+        <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+    </div>
+    
+</body>
+
+
+
+

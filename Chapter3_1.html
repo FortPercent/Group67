@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vector Space</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header">
+		     <div class="main">
+		        <div class="logo"><a href="index.html"><img src="images/logo.png" width="100px"></a></div>
+		        <div class="nav">
+		            <ul>
+		              <li><a href="Course.html">Courses<span class="on"></span></a></li>
+		              <li><a href="Quiz_1.1.1.html">Quiz<span></span></a></li>
+		              <li><a href="notes_all.html">Forum<span></span></a></li>
+		              <li><a href="Experiment.html">Experiment<span></span></a></li>
+					  <li><a href="video.html">More<span></span></a></li>
+		           </ul>
+		        </div>
+		        <div class="sy">
+		            <input type="text" placeholder="search" value="search">
+		            <button>Question</button>
+		        </div>
+		        <div class="tx"><a href="login.html"><img src="images/icon.png"></a></div>
+		     </div>
+		</div>
+		
+		<div class="main">
+		    
+		   <div class="video">
+		       <div class="Course">
+		            <div class="Course_z">
+		                <h1 class="Course_z_off">Linear Algebra</h1>
+		                <dl>
+		                   <dt>Linear Equation</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_1.html">Linear Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter1_2.html">Vector Equation</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Matrix Algebra</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_1.html">Matrix Equation</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter2_2.html">Subspace & Dimension</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Vector Space</dt>
+		                   <dd><a class="Course_chapter_on" href="Chapter3_1.html">Vector Space</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter3_2.html">Zero Space & Basis</a></dd>
+		                </dl>
+		                
+		                <dl>
+		                   <dt>Eigenvalues</dt>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_1.html">Eigenvectors&Eigenvalues</a></dd>
+		                   <dd><a class="Course_chapter_off" href="Chapter4_2.html">Eigenfunctions</a></dd>
+		                </dl>
+		            </div>
+					
+		            <div class="Course_chapter">
+						<h1>Vector Space</h1>
+						<hr color = "#708ACE" size=1px/>
+						<h2>What is vector space?</h2>
+						<div class="Course_chapter_content">
+							<p>A vector space is a non-empty set V of objects called vectors, on which two operations are defined, called addition and scalar multiplication, subject to the following axioms:</p>
+							<ol>
+								<li>1. u + v = v + u;</li>
+								<li>2. (u + v) + w = u + (v + w);</li>
+								<li>3. There is a vector 0 in V such that u + 0 = 0 + u = u;</li>
+								<li>4. For each vector u in V, there exists a vector -u in V, such that u + (-u) = -u + u =0;</li>
+								<li>5. c(u + v) = cu + cv;</li>
+								<li>6. (c + d)u = cu + du;</li>
+								<li>7. c(du) = (cd)u;</li>
+								<li>8. 1*u = u</li>
+							</ol>
+							<p>Using only these axioms, we can prove the zero vector in axiom 4 and the negative vector in axiom 5 -u are unique. </p>
+							<p>The definition of V is defined in a set way, involving only length and direction, independent of the coordinate system, and addition obeys the parallelogram law:</p>
+							<div align="center">
+								<img src="images/vectorspace.png" height ="105px">
+								<img src="images/vectorspace2.png" height ="105px">
+								<img src="images/vectorspace3.png" height ="105px">
+							</div>
+						</div>
+						<hr color="#708ACE" size=1px/>
+						<h2>Subspace</h2>
+						<div class="Course_chapter_content">
+							<p>In many problems, a vector space is composed of an appropriate subset of a large vector space. In this case, the ten axioms of vector space need only satisfy the following three properties to be called the subspace H of vector space V.</p>
+							<ol>
+								<li>1. The zero vector in V is a member of H;</li>
+								<li>2. H is closed to vector addition: for any vector u and v in H, vector u+v belongs to H;</li>
+								<li>3. H is closed for vector multiplication: for any vector u and the scalar c in H, cu belongs to H.</li>
+							</ol>
+							<div align = "center">
+								<img src="images/subspace3.png" height ="90px" >&emsp;&emsp;&emsp;&emsp;<img src="images/subspace4.png" height ="110px" >
+								<h6>A subspace of V &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A subspace of R^3</h6>
+							</div>
+							<p>R^2 is not subspace of R^3,because R^2  is not a subset of R^3(each vector in R^3  contains three elements,but the vector in R^2  only contains two elements).</p>
+						</div>
+						<hr color="#708ACE" size=1px/>
+
+		                <div class="fy">
+		                     <div class="fy_s">
+		                         <p>Test Yourself!</p>
+		                         <a href="Quiz_3.1.1.html"><p class="text1">Quiz Link</p></a>
+		                     </div>
+		                     <div class="fy_x">
+		                         <a href="Chapter2_2.html">Previous</a>
+		                         <a href="Chapter3_2.html">Next</a>
+		                     </div>
+		                </div>
+		            </div>
+		       </div>
+		
+		        <div class="video_right">
+		          
+		          <div class="video_xk">
+		           <div class="video_top">
+		               <ul>
+		                  <li>
+		                    <a href="threads_all.html">
+		                    <img src="images/icon1.jpg">
+		                    <p>Answer<br>Question</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="notes_all.html">
+		                    <img src="images/icon2.jpg">
+		                    <p>Share<br>notes</p>
+		                    </a>
+		                  </li>
+		                  <li>
+		                    <a href="download_all.html">
+		                    <img src="images/icon3.jpg">
+		                    <p>Download<br>file</p>
+		                    </a>
+		                  </li>
+		               </ul>
+		           </div>
+		           <div class="video_btm">
+		               <span>Answer later</span><span style="border:none;">Draft</span>
+		           </div>
+		         </div>
+		           
+		         <div class="tb">
+		              <ul>
+		                 <li>
+		                    <a href="#">
+		                    <img src="images/icon4.jpg">
+		                    <p>Reference</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon5.jpg">
+		                    <p>Video</p>
+		                    </a>
+		                 </li>
+		                 <li>
+		                    <a href="video.html">
+		                    <img src="images/icon6.jpg">
+		                    <p>Further<br>Study</p>
+		                    </a>
+		                 </li>
+		              </ul>
+		         </div>
+		           
+		        </div>
+		   </div>
+		   
+		<div class="foot">
+		    <a href="#">AboutUs</a>| 
+		    <a href="#">Contact Us</a> | 
+		    <a href="#">Help Centre</a> | 
+		    <a href="#">Terms of Service</a> | @2020- AlgebraGO.Inc All Rights reserved.
+		</div>
+	</body>
+</html>
